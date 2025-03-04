@@ -120,8 +120,20 @@ public class HelloGreetingController : ControllerBase
     /// Getmessage method to get the message
     /// </summary>
     /// <returns>Hello World</returns>
-    public string GetMessage()
+    [HttpGet]
+    [Route("getMessage")]
+    public IActionResult GetMessage(string? firstName, string? lastName)
     {
-        return _greetingBL.GreetMessage();
+        _logger.Info($"Get request received with Firstname: {firstName}, Lastname: {lastName}");
+
+        string message = _greetingBL.GreetMessage(firstName, lastName);
+
+        ResponseModel<string> responseModel = new ResponseModel<string>()
+        {
+            Success = true,
+            Message = "Greet Message generated",
+            Data = message
+        };
+        return Ok(responseModel);
     }
 }

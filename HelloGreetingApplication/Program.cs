@@ -1,3 +1,5 @@
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +12,9 @@ try
     logger.Info("Starting application...");
 
     var builder = WebApplication.CreateBuilder(args);
+
+
+    builder.Services.AddScoped<IGreetingBL, GreetingBL>();
 
     // Add services to the container
     builder.Services.AddControllers();
