@@ -16,5 +16,6 @@ namespace BusinessLayer.Interface
 
         public GreetingEntity GetGreetingById(int id);
         GreetingEntity UpdateGreeting(int id, GreetingEntity greeting);
+        bool DeleteGreeting(int id);
     }
 }

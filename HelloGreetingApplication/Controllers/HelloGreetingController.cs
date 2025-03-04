@@ -183,6 +183,12 @@ public class HelloGreetingController : ControllerBase
         return CreatedAtAction(nameof(GetGreetings), new { id = createdGreeting.Id }, createdGreeting);             
     }
 
+    /// <summary>
+    /// Method to update the greeting message
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="greeting"></param>
+    /// <returns>Updated greeting messages</returns>
     [HttpPut("{id}")]
     [Route("UpdateGreeting")]
     public IActionResult UpdateGreeting(int id, GreetingEntity greeting)
@@ -198,5 +204,22 @@ public class HelloGreetingController : ControllerBase
             return NotFound("Greeting not found.");
         }
         return Ok(updatedGreeting);
+    }
+
+    /// <summary>
+    /// Method to delete a message
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>deleted message</returns>
+    [HttpDelete("{id}")]
+    [Route("DeleteId")]
+    public IActionResult DeleteGreeting(int id)
+    {
+        var isDeleted = _greetingBL.DeleteGreeting(id);
+        if (!isDeleted)
+        {
+            return NotFound("Greeting not found.");
+        }
+        return NoContent();
     }
 }
