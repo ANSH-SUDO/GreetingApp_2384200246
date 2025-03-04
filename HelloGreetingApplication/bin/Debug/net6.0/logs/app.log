@@ -100,3 +100,252 @@
 2025-03-04 12:58:44.7031 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 1.1474ms
 2025-03-04 12:58:44.7031 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)'
 2025-03-04 12:58:44.7031 INFO Request finished HTTP/2 GET https://localhost:7107/HelloGreeting/getMethod - - - 200 - application/json;+charset=utf-8 9.0359ms
+2025-03-04 15:20:02.4923 INFO Starting application...
+2025-03-04 15:20:06.7657 INFO Now listening on: https://localhost:7107
+2025-03-04 15:20:06.7839 INFO Now listening on: http://localhost:5271
+2025-03-04 15:20:06.9814 INFO Application started. Press Ctrl+C to shut down.
+2025-03-04 15:20:06.9814 INFO Hosting environment: Development
+2025-03-04 15:20:06.9814 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-04 15:20:11.9342 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-04 15:20:13.2525 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1327.5811ms
+2025-03-04 15:20:13.3430 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-04 15:20:13.3430 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-04 15:20:13.3430 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-04 15:20:13.3602 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 17.1119ms
+2025-03-04 15:20:13.4172 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 73.6709ms
+2025-03-04 15:20:13.5931 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-04 15:20:13.5931 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 1.5374ms
+2025-03-04 15:20:13.7248 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 381.3113ms
+2025-03-04 15:20:13.9282 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-04 15:20:13.9986 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.8582ms
+2025-03-04 15:20:15.4223 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-04 15:20:15.4223 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.5098ms
+2025-03-04 15:21:05.8752 INFO Request starting HTTP/2 GET https://localhost:7107/HelloGreeting/getMessage - -
+2025-03-04 15:21:05.9148 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetMessage (HelloGreetingApplication)'
+2025-03-04 15:21:05.9770 INFO Route matched with {action = "GetMessage", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMessage(System.String, System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 15:21:06.0409 INFO Get request received with Firstname: , Lastname: 
+2025-03-04 15:21:06.0547 INFO Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-04 15:21:06.0694 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetMessage (HelloGreetingApplication) in 82.8745ms
+2025-03-04 15:21:06.0694 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetMessage (HelloGreetingApplication)'
+2025-03-04 15:21:06.0694 INFO Request finished HTTP/2 GET https://localhost:7107/HelloGreeting/getMessage - - - 200 - application/json;+charset=utf-8 195.1618ms
+2025-03-04 20:21:23.3588 INFO Starting application...
+2025-03-04 20:21:24.8325 ERROR Application failed to start.
+2025-03-04 20:23:49.2407 INFO Starting application...
+2025-03-04 20:23:49.8558 ERROR Application failed to start.
+2025-03-04 20:25:41.5654 INFO Starting application...
+2025-03-04 20:25:42.2033 ERROR Application failed to start.
+2025-03-04 20:25:59.9250 INFO Starting application...
+2025-03-04 20:26:00.2549 ERROR Application failed to start.
+2025-03-04 20:29:22.7580 INFO Starting application...
+2025-03-04 20:29:24.8181 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:30:49.7468 INFO Starting application...
+2025-03-04 20:30:51.6515 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:30:53.6095 INFO Executed DbCommand (493ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [HelloGreetingAPI];
+2025-03-04 20:30:53.7553 INFO Executed DbCommand (138ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [HelloGreetingAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-03-04 20:30:53.7961 INFO Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-03-04 20:30:54.0523 INFO Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2025-03-04 20:30:54.0523 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-03-04 20:30:54.1014 INFO Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-03-04 20:30:54.1774 INFO Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-03-04 20:30:54.2218 INFO Applying migration '20250304145925_InitialMigration'.
+2025-03-04 20:30:54.2872 INFO Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Greetings] (
+    [Id] int NOT NULL IDENTITY,
+    [Message] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Greetings] PRIMARY KEY ([Id])
+);
+2025-03-04 20:30:54.3066 INFO Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250304145925_InitialMigration', N'6.0.36');
+2025-03-04 20:33:49.6989 INFO Starting application...
+2025-03-04 20:33:57.1795 INFO Now listening on: https://localhost:7107
+2025-03-04 20:33:57.2680 INFO Now listening on: http://localhost:5271
+2025-03-04 20:33:57.4544 INFO Application started. Press Ctrl+C to shut down.
+2025-03-04 20:33:57.4571 INFO Hosting environment: Development
+2025-03-04 20:33:57.4571 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-04 20:34:06.5574 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-04 20:34:08.2059 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1653.6902ms
+2025-03-04 20:34:08.5052 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-04 20:34:08.5052 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-04 20:34:08.5052 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-04 20:34:08.5052 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 11.8985ms
+2025-03-04 20:34:08.5408 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 34.6256ms
+2025-03-04 20:34:08.9854 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 479.2801ms
+2025-03-04 20:34:10.3781 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-04 20:34:10.4601 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.8837ms
+2025-03-04 20:37:33.1404 INFO Request starting HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 60
+2025-03-04 20:37:33.1834 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:37:33.5936 INFO Route matched with {action = "AddGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddGreeting(RepositoryLayer.Entity.GreetingEntity) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 20:37:36.8584 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:37:39.9233 ERROR Failed executing DbCommand (269ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Id], [Message])
+VALUES (@p0, @p1);
+2025-03-04 20:37:40.4716 ERROR An exception occurred in the database while saving changes for context type 'RepositoryLayer.Context.GreetingContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Greetings' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:10c89040-7ffc-41cc-811c-ec0b667a40a2
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2025-03-04 20:42:10.2465 INFO Starting application...
+2025-03-04 20:42:14.4444 INFO Now listening on: https://localhost:7107
+2025-03-04 20:42:14.4877 INFO Now listening on: http://localhost:5271
+2025-03-04 20:42:16.2567 INFO Application started. Press Ctrl+C to shut down.
+2025-03-04 20:42:16.2567 INFO Hosting environment: Development
+2025-03-04 20:42:16.2567 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-04 20:42:19.6139 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-04 20:42:20.9369 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1330.4387ms
+2025-03-04 20:42:21.1459 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-04 20:42:21.1459 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-04 20:42:21.1459 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-04 20:42:21.1459 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.0532ms
+2025-03-04 20:42:21.1633 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 17.2700ms
+2025-03-04 20:42:21.4363 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 290.3486ms
+2025-03-04 20:42:21.7727 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-04 20:42:21.8915 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.0018ms
+2025-03-04 20:42:49.0047 INFO Request starting HTTP/2 POST https://localhost:7107/HelloGreeting/GreetingId application/json 36
+2025-03-04 20:42:49.0614 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:42:49.1285 INFO Route matched with {action = "AddGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddGreeting(RepositoryLayer.Entity.GreetingEntity) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 20:42:52.4333 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:42:54.9503 INFO Executed DbCommand (276ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Message])
+VALUES (@p0);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-03-04 20:42:55.2193 INFO Executing CreatedAtActionResult, writing value of type 'RepositoryLayer.Entity.GreetingEntity'.
+2025-03-04 20:42:55.3102 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication) in 6166.9653ms
+2025-03-04 20:42:55.3102 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:42:55.3614 INFO Request finished HTTP/2 POST https://localhost:7107/HelloGreeting/GreetingId application/json 36 - 201 - application/json;+charset=utf-8 6356.6111ms
+2025-03-04 20:43:06.1975 INFO Request starting HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 60
+2025-03-04 20:43:06.1975 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:43:06.2058 INFO Route matched with {action = "AddGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddGreeting(RepositoryLayer.Entity.GreetingEntity) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 20:43:06.3302 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:43:06.4049 ERROR Failed executing DbCommand (44ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Id], [Message])
+VALUES (@p0, @p1);
+2025-03-04 20:43:06.8655 ERROR An exception occurred in the database while saving changes for context type 'RepositoryLayer.Context.GreetingContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Greetings' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f5f3359b-8558-41c5-a032-b56af56d5613
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2025-03-04 20:45:04.8654 INFO Starting application...
+2025-03-04 20:45:08.4303 INFO Now listening on: https://localhost:7107
+2025-03-04 20:45:08.4619 INFO Now listening on: http://localhost:5271
+2025-03-04 20:45:08.8024 INFO Application started. Press Ctrl+C to shut down.
+2025-03-04 20:45:08.8199 INFO Hosting environment: Development
+2025-03-04 20:45:08.9363 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-04 20:45:12.3856 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-04 20:45:14.1866 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1806.5528ms
+2025-03-04 20:45:14.2960 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-04 20:45:14.2960 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-04 20:45:14.2960 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-04 20:45:14.3013 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.2273ms
+2025-03-04 20:45:14.3155 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 19.4023ms
+2025-03-04 20:45:14.5113 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 215.0405ms
+2025-03-04 20:45:14.7262 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-04 20:45:14.7673 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.0719ms
+2025-03-04 20:45:16.9651 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-04 20:45:16.9651 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 1.2783ms
+2025-03-04 20:45:18.1288 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-04 20:45:18.1288 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.9140ms
+2025-03-04 20:45:29.2490 INFO Request starting HTTP/2 POST https://localhost:7107/HelloGreeting/GreetingId application/json 36
+2025-03-04 20:45:29.2693 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:45:29.3657 INFO Route matched with {action = "AddGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddGreeting(RepositoryLayer.Entity.GreetingEntity) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 20:45:32.0945 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:45:34.4510 INFO Executed DbCommand (182ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Message])
+VALUES (@p0);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-03-04 20:45:34.7304 INFO Executing CreatedAtActionResult, writing value of type 'RepositoryLayer.Entity.GreetingEntity'.
+2025-03-04 20:45:34.8425 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication) in 5433.3687ms
+2025-03-04 20:45:34.8494 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:45:34.8936 INFO Request finished HTTP/2 POST https://localhost:7107/HelloGreeting/GreetingId application/json 36 - 201 - application/json;+charset=utf-8 5646.0019ms
+2025-03-04 20:45:49.7359 INFO Request starting HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 43
+2025-03-04 20:45:49.7441 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:45:49.7441 INFO Route matched with {action = "AddGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddGreeting(RepositoryLayer.Entity.GreetingEntity) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 20:45:49.8651 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:45:49.9125 INFO Executed DbCommand (30ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Message])
+VALUES (@p0);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-03-04 20:45:49.9125 INFO Executing CreatedAtActionResult, writing value of type 'RepositoryLayer.Entity.GreetingEntity'.
+2025-03-04 20:45:49.9339 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication) in 186.9588ms
+2025-03-04 20:45:49.9339 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:45:49.9339 INFO Request finished HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 43 - 201 - application/json;+charset=utf-8 200.9402ms
+2025-03-04 20:45:57.3295 INFO Request starting HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 43
+2025-03-04 20:45:57.3787 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:45:57.4173 INFO Route matched with {action = "AddGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddGreeting(RepositoryLayer.Entity.GreetingEntity) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-04 20:45:57.4910 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-04 20:45:57.5157 INFO Executed DbCommand (18ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Message])
+VALUES (@p0);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-03-04 20:45:57.5157 INFO Executing CreatedAtActionResult, writing value of type 'RepositoryLayer.Entity.GreetingEntity'.
+2025-03-04 20:45:57.5182 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication) in 93.7719ms
+2025-03-04 20:45:57.5182 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
+2025-03-04 20:45:57.5182 INFO Request finished HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 43 - 201 - application/json;+charset=utf-8 189.9201ms

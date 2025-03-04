@@ -2,6 +2,7 @@ using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using NLog;
+using RepositoryLayer.Entity;
 
 namespace HelloGreetingApplication.Controllers;
 
@@ -135,5 +136,25 @@ public class HelloGreetingController : ControllerBase
             Data = message
         };
         return Ok(responseModel);
+    }
+
+    [HttpGet]
+    public IActionResult GetGreetings()
+    {
+        var greetings = _greetingBL.GetGreetings();
+        return Ok(greetings);
+    }
+
+    [HttpPost]
+    [Route("GreetingId")]
+    public IActionResult AddGreeting(GreetingEntity greeting)
+    {
+        if (greeting == null || string.IsNullOrWhiteSpace(greeting.Message))
+        {
+            return BadRequest("Invalid greeting message.");
+        }
+
+        var createdGreeting = _greetingBL.AddGreeting(greeting);
+        return CreatedAtAction(nameof(GetGreetings), new { id = createdGreeting.Id }, createdGreeting);             
     }
 }
