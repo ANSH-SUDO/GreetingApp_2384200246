@@ -141,6 +141,7 @@ public class HelloGreetingController : ControllerBase
     /// </summary>
     /// <returns>List of messages</returns>
     [HttpGet]
+    [Route("ListGreeting")]
     public IActionResult GetGreetings()
     {
         var greetings = _greetingBL.GetGreetings();
@@ -153,7 +154,7 @@ public class HelloGreetingController : ControllerBase
     /// <param name="id"></param>
     /// <returns>Greeting Message</returns>
     [HttpGet("{id}")]
-    [Route("GetId")]
+    [Route("GetGreetingById")]
     public IActionResult GetGreetingById(int id)
     {
         var Id = _greetingBL.GetGreetingById(id);
@@ -180,5 +181,22 @@ public class HelloGreetingController : ControllerBase
 
         var createdGreeting = _greetingBL.AddGreeting(greeting);
         return CreatedAtAction(nameof(GetGreetings), new { id = createdGreeting.Id }, createdGreeting);             
+    }
+
+    [HttpPut("{id}")]
+    [Route("UpdateGreeting")]
+    public IActionResult UpdateGreeting(int id, GreetingEntity greeting)
+    {
+        if (greeting == null || string.IsNullOrWhiteSpace(greeting.Message))
+        {
+            return BadRequest("Invalid greeting message.");
+        }
+
+        var updatedGreeting = _greetingBL.UpdateGreeting(id, greeting);
+        if (updatedGreeting == null)
+        {
+            return NotFound("Greeting not found.");
+        }
+        return Ok(updatedGreeting);
     }
 }
