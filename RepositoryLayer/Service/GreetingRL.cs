@@ -27,5 +27,10 @@ namespace RepositoryLayer.Service
             _context.SaveChanges();
             return greeting;
         }
+
+        public GreetingEntity GetGreetingById(int id)
+        {
+            return _context.Greetings.FirstOrDefault(g => g.Id == id);
+        }
     }
 }

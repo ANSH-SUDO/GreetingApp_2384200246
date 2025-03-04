@@ -13,5 +13,7 @@ namespace BusinessLayer.Interface
 
         List<GreetingEntity> GetGreetings();
         GreetingEntity AddGreeting(GreetingEntity greeting);
+
+        public GreetingEntity GetGreetingById(int id);
     }
 }

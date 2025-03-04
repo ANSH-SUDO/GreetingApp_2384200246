@@ -145,6 +145,23 @@ public class HelloGreetingController : ControllerBase
         return Ok(greetings);
     }
 
+    /// <summary>
+    /// Method used to get greeting message by id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>Greeting Message</returns>
+    [HttpGet("{id}")]
+    [Route("GetId")]
+    public IActionResult GetGreetingById(int id)
+    {
+        var Id = _greetingBL.GetGreetingById(id);
+        if (Id == null)
+        {
+            return NotFound("Greeting not found.");
+        }
+        return Ok(Id);
+    }
+
     [HttpPost]
     [Route("GreetingId")]
     public IActionResult AddGreeting(GreetingEntity greeting)
