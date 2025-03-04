@@ -9,11 +9,13 @@ namespace HelloGreetingApplication.Controllers;
 [Route("[controller]")]
 public class HelloGreetingController : ControllerBase
 {
+    IGreetingBL _greetingBL;
     private readonly Logger _logger = LogManager.GetCurrentClassLogger();
     ResponseModel<string> responseModel;
 
-    public HelloGreetingController()
-    {  
+    public HelloGreetingController(IGreetingBL greetingBL)
+    {
+        _greetingBL = greetingBL;
     }
 
 
@@ -112,5 +114,14 @@ public class HelloGreetingController : ControllerBase
         responseModel.Message = "Greeting deleted successfully.";
         responseModel.Data = string.Empty;
         return Ok(responseModel);
+    }
+
+    /// <summary>
+    /// Getmessage method to get the message
+    /// </summary>
+    /// <returns>Hello World</returns>
+    public string GetMessage()
+    {
+        return _greetingBL.GreetMessage();
     }
 }

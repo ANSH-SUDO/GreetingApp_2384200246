@@ -9,5 +9,9 @@ namespace BusinessLayer.Service
 {
     public class GreetingBL : IGreetingBL
     {
+        public string GreetMessage()
+        {
+            return "Hello World";
+        }
     }
 }
