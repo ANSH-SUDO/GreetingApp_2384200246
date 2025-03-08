@@ -349,3 +349,318 @@ WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
 2025-03-04 20:45:57.5182 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication) in 93.7719ms
 2025-03-04 20:45:57.5182 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddGreeting (HelloGreetingApplication)'
 2025-03-04 20:45:57.5182 INFO Request finished HTTP/1.1 POST https://localhost:7107/HelloGreeting/GreetingId application/json 43 - 201 - application/json;+charset=utf-8 189.9201ms
+2025-03-05 10:55:11.7133 INFO Starting application...
+2025-03-05 10:55:16.0574 INFO Now listening on: https://localhost:7107
+2025-03-05 10:55:16.0765 INFO Now listening on: http://localhost:5271
+2025-03-05 10:55:16.2390 INFO Application started. Press Ctrl+C to shut down.
+2025-03-05 10:55:16.2390 INFO Hosting environment: Development
+2025-03-05 10:55:16.2390 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-05 10:55:21.6172 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-05 10:55:23.9307 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 2314.9029ms
+2025-03-05 10:55:24.0061 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/swagger-ui-standalone-preset.js - -
+2025-03-05 10:55:24.0061 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-05 10:55:24.0061 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/swagger-ui.css - -
+2025-03-05 10:55:24.0061 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.css - -
+2025-03-05 10:55:24.0061 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/swagger-ui-bundle.js - -
+2025-03-05 10:55:24.0301 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 23.7792ms
+2025-03-05 10:55:24.0331 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-05 10:55:24.0331 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 3.2532ms
+2025-03-05 10:55:24.0500 INFO The file /swagger-ui-bundle.js was not modified
+2025-03-05 10:55:24.0500 INFO The file /swagger-ui-standalone-preset.js was not modified
+2025-03-05 10:55:24.0500 INFO The file /index.css was not modified
+2025-03-05 10:55:24.0500 INFO The file /swagger-ui.css was not modified
+2025-03-05 10:55:24.0500 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 44.2372ms
+2025-03-05 10:55:24.0500 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/swagger-ui.css - - - 304 - text/css 47.4445ms
+2025-03-05 10:55:24.0500 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.css - - - 304 - text/css 47.5650ms
+2025-03-05 10:55:24.0500 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 47.9229ms
+2025-03-05 10:55:24.1676 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-05 10:55:24.5062 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 338.3604ms
+2025-03-05 10:55:24.9868 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-05 10:55:25.0766 ERROR An unhandled exception has occurred while executing the request.
+2025-03-05 10:55:25.2719 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 285.1195ms
+2025-03-05 11:10:33.7280 INFO Starting application...
+2025-03-05 11:10:38.3025 INFO Now listening on: https://localhost:7107
+2025-03-05 11:10:38.3190 INFO Now listening on: http://localhost:5271
+2025-03-05 11:10:38.5359 INFO Application started. Press Ctrl+C to shut down.
+2025-03-05 11:10:38.5359 INFO Hosting environment: Development
+2025-03-05 11:10:38.5490 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-05 11:10:42.8381 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-05 11:10:44.3426 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1511.3864ms
+2025-03-05 11:10:44.5864 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-05 11:10:44.5864 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-05 11:10:44.5864 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-05 11:10:44.5864 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 7.7742ms
+2025-03-05 11:10:44.6249 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 38.1940ms
+2025-03-05 11:10:44.8677 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 281.1804ms
+2025-03-05 11:10:45.2858 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-05 11:10:45.3669 ERROR An unhandled exception has occurred while executing the request.
+2025-03-05 11:10:45.3973 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 111.4485ms
+2025-03-05 11:16:15.8410 INFO Starting application...
+2025-03-05 11:16:19.1380 INFO Now listening on: https://localhost:7107
+2025-03-05 11:16:19.2286 INFO Now listening on: http://localhost:5271
+2025-03-05 11:16:19.8323 INFO Application started. Press Ctrl+C to shut down.
+2025-03-05 11:16:19.8486 INFO Hosting environment: Development
+2025-03-05 11:16:19.8486 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-05 11:16:22.4821 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-05 11:16:23.6836 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1242.2296ms
+2025-03-05 11:16:23.7761 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-05 11:16:23.7761 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-05 11:16:23.7761 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-05 11:16:23.8818 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 105.3584ms
+2025-03-05 11:16:23.8818 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 109.8248ms
+2025-03-05 11:16:24.1272 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 346.9371ms
+2025-03-05 11:16:24.4489 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-05 11:16:24.4727 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 23.7507ms
+2025-03-05 11:16:25.7147 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-05 11:16:25.7223 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 7.6643ms
+2025-03-05 11:16:26.1327 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-05 11:16:26.1418 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.1119ms
+2025-03-05 11:17:07.9929 INFO Request starting HTTP/2 DELETE https://localhost:7107/HelloGreeting/DeleteId - -
+2025-03-05 11:17:08.0270 INFO Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.DeleteGreeting (HelloGreetingApplication)'
+2025-03-05 11:17:08.1151 INFO Route matched with {action = "DeleteGreeting", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteGreeting(Int32) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication).
+2025-03-05 11:17:12.7811 INFO Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-03-05 11:17:18.8744 INFO Executed DbCommand (282ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Message]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0
+2025-03-05 11:17:19.0107 INFO Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-03-05 11:17:19.0274 INFO Executed action HelloGreetingApplication.Controllers.HelloGreetingController.DeleteGreeting (HelloGreetingApplication) in 10900.9333ms
+2025-03-05 11:17:19.0274 INFO Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.DeleteGreeting (HelloGreetingApplication)'
+2025-03-05 11:17:19.1037 INFO Request finished HTTP/2 DELETE https://localhost:7107/HelloGreeting/DeleteId - - - 404 - text/plain;+charset=utf-8 11110.6888ms
+2025-03-05 13:52:25.5292 INFO Starting application...
+2025-03-05 13:52:30.5886 INFO Now listening on: https://localhost:7107
+2025-03-05 13:52:30.6066 INFO Now listening on: http://localhost:5271
+2025-03-05 13:52:30.7766 INFO Application started. Press Ctrl+C to shut down.
+2025-03-05 13:52:30.7766 INFO Hosting environment: Development
+2025-03-05 13:52:30.7766 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-05 13:52:33.5814 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-05 13:52:34.8715 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1272.0937ms
+2025-03-05 13:52:36.3147 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-05 13:52:36.3147 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-05 13:52:36.3147 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-05 13:52:36.3147 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 6.1291ms
+2025-03-05 13:52:36.3295 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 14.8454ms
+2025-03-05 13:52:36.4244 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.7201ms
+2025-03-05 13:52:36.5820 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-05 13:52:36.6323 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.2355ms
+2025-03-05 23:55:15.0940 INFO Starting application...
+2025-03-05 23:55:18.5233 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-05 23:55:18.5715 INFO Creating key {649d5bfb-4f35-4541-8363-c1c38c75e68c} with creation date 2025-03-05 18:25:18Z, activation date 2025-03-05 18:25:18Z, and expiration date 2025-06-03 18:25:18Z.
+2025-03-05 23:55:18.6151 INFO Writing data to file 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys\key-649d5bfb-4f35-4541-8363-c1c38c75e68c.xml'.
+2025-03-05 23:55:19.4256 INFO Now listening on: https://localhost:7107
+2025-03-05 23:55:19.4256 INFO Now listening on: http://localhost:5271
+2025-03-05 23:55:19.6542 INFO Application started. Press Ctrl+C to shut down.
+2025-03-05 23:55:19.6542 INFO Hosting environment: Development
+2025-03-05 23:55:19.6542 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-05 23:55:25.9041 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-05 23:55:26.9583 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1065.6414ms
+2025-03-05 23:55:27.2176 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-05 23:55:27.2695 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 51.9038ms
+2025-03-05 23:55:27.3933 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-05 23:55:27.4006 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-05 23:55:27.4006 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 16.8451ms
+2025-03-05 23:55:27.8424 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 441.8527ms
+2025-03-05 23:55:28.1588 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-05 23:55:28.1874 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 28.7185ms
+2025-03-05 23:58:06.2479 INFO Request starting HTTP/1.1 POST https://localhost:7107//api/auth/login - 0
+2025-03-05 23:58:11.0918 INFO Request finished HTTP/1.1 POST https://localhost:7107//api/auth/login - 0 - 404 0 - 4843.9548ms
+2025-03-05 23:58:40.6134 INFO Request starting HTTP/1.1 POST https://localhost:7107//api/auth/login application/json 62
+2025-03-05 23:58:40.6199 INFO Request finished HTTP/1.1 POST https://localhost:7107//api/auth/login application/json 62 - 404 0 - 6.4897ms
+2025-03-05 23:58:51.5994 INFO Request starting HTTP/1.1 POST https://localhost:7107/api/auth/login application/json 62
+2025-03-05 23:58:51.6094 INFO Executing endpoint 'AuthController.Login (HelloGreetingApplication)'
+2025-03-05 23:58:51.6933 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (HelloGreetingApplication).
+2025-03-05 23:58:51.7150 INFO Executed action AuthController.Login (HelloGreetingApplication) in 6.5674ms
+2025-03-05 23:58:51.7150 INFO Executed endpoint 'AuthController.Login (HelloGreetingApplication)'
+2025-03-05 23:58:51.7150 ERROR An unhandled exception has occurred while executing the request.
+2025-03-05 23:58:51.8537 INFO Request finished HTTP/1.1 POST https://localhost:7107/api/auth/login application/json 62 - 500 - text/plain;+charset=utf-8 254.2974ms
+2025-03-06 00:00:23.3310 INFO Starting application...
+2025-03-06 00:00:25.9704 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 00:00:26.7571 INFO Now listening on: https://localhost:7107
+2025-03-06 00:00:26.7571 INFO Now listening on: http://localhost:5271
+2025-03-06 00:00:27.3448 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 00:00:27.3966 INFO Hosting environment: Development
+2025-03-06 00:00:27.4476 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 00:00:28.0259 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 00:00:29.0808 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1060.8924ms
+2025-03-06 00:00:29.1124 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/swagger-ui-bundle.js - -
+2025-03-06 00:00:29.1124 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 00:00:29.1124 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/swagger-ui-standalone-preset.js - -
+2025-03-06 00:00:29.1124 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.css - -
+2025-03-06 00:00:29.1124 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/swagger-ui.css - -
+2025-03-06 00:00:29.1124 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.4298ms
+2025-03-06 00:00:29.1204 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 00:00:29.1204 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 11.4752ms
+2025-03-06 00:00:29.1204 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 00:00:29.1204 INFO The file /swagger-ui-standalone-preset.js was not modified
+2025-03-06 00:00:29.1204 INFO The file /swagger-ui-bundle.js was not modified
+2025-03-06 00:00:29.1204 INFO The file /index.css was not modified
+2025-03-06 00:00:29.1204 INFO The file /swagger-ui.css was not modified
+2025-03-06 00:00:29.1368 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.css - - - 304 - text/css 23.3728ms
+2025-03-06 00:00:29.1368 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/swagger-ui.css - - - 304 - text/css 23.3316ms
+2025-03-06 00:00:29.1368 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 24.5619ms
+2025-03-06 00:00:29.1368 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 24.7592ms
+2025-03-06 00:00:29.3459 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 213.7118ms
+2025-03-06 00:00:29.7146 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 00:00:29.7397 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.0732ms
+2025-03-06 00:00:55.6534 INFO Request starting HTTP/1.1 POST https://localhost:7107/api/auth/login application/json 62
+2025-03-06 00:00:56.0573 INFO Executing endpoint 'AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:00:56.1304 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (HelloGreetingApplication).
+2025-03-06 00:00:56.1696 INFO Executed action AuthController.Login (HelloGreetingApplication) in 17.2525ms
+2025-03-06 00:00:56.1696 INFO Executed endpoint 'AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:00:56.1836 ERROR An unhandled exception has occurred while executing the request.
+2025-03-06 00:00:56.3169 INFO Request finished HTTP/1.1 POST https://localhost:7107/api/auth/login application/json 62 - 500 - text/plain;+charset=utf-8 663.5404ms
+2025-03-06 00:03:07.3227 INFO Starting application...
+2025-03-06 00:03:09.2402 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 00:03:09.9119 INFO Now listening on: https://localhost:7107
+2025-03-06 00:03:09.9119 INFO Now listening on: http://localhost:5271
+2025-03-06 00:03:10.0020 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 00:03:10.0020 INFO Hosting environment: Development
+2025-03-06 00:03:10.0020 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 00:03:10.9128 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 00:03:11.5529 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 645.6385ms
+2025-03-06 00:03:12.1464 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 00:03:12.1464 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 00:03:12.1464 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 00:03:12.1618 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 12.3170ms
+2025-03-06 00:03:12.1717 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 25.2859ms
+2025-03-06 00:03:12.4648 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 318.3212ms
+2025-03-06 00:03:12.6725 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 00:03:12.6885 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.9822ms
+2025-03-06 00:03:26.0287 INFO Request starting HTTP/2 POST https://localhost:7107/api/auth/login application/json 50
+2025-03-06 00:03:26.4056 INFO Executing endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:03:26.4517 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HelloGreetingApplication.Controllers.LoginRequest) on controller HelloGreetingApplication.Controllers.AuthController (HelloGreetingApplication).
+2025-03-06 00:03:26.4842 INFO Executed action HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication) in 10.597ms
+2025-03-06 00:03:26.4842 INFO Executed endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:03:26.4988 ERROR An unhandled exception has occurred while executing the request.
+2025-03-06 00:03:26.6118 INFO Request finished HTTP/2 POST https://localhost:7107/api/auth/login application/json 50 - 500 - text/plain;+charset=utf-8 583.1120ms
+2025-03-06 00:11:42.4372 INFO Starting application...
+2025-03-06 00:11:44.7271 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 00:11:45.5474 INFO Now listening on: https://localhost:7107
+2025-03-06 00:11:45.5474 INFO Now listening on: http://localhost:5271
+2025-03-06 00:11:45.6438 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 00:11:45.6438 INFO Hosting environment: Development
+2025-03-06 00:11:45.6438 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 00:11:47.2030 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 00:11:48.7177 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1517.3713ms
+2025-03-06 00:11:48.8080 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 00:11:48.8080 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 00:11:48.8080 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 00:11:48.8080 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 9.6187ms
+2025-03-06 00:11:48.8305 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 19.1471ms
+2025-03-06 00:11:49.0109 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 199.3839ms
+2025-03-06 00:11:49.1835 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 00:11:49.2060 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.3991ms
+2025-03-06 00:11:57.0952 INFO Request starting HTTP/2 POST https://localhost:7107/api/auth/login application/json 50
+2025-03-06 00:11:57.5094 INFO Executing endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:11:57.5547 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.LoginRequest) on controller HelloGreetingApplication.Controllers.AuthController (HelloGreetingApplication).
+2025-03-06 00:11:57.5776 INFO Executed action HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication) in 6.6606ms
+2025-03-06 00:11:57.5776 INFO Executed endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:11:57.5944 ERROR An unhandled exception has occurred while executing the request.
+2025-03-06 00:11:57.7056 INFO Request finished HTTP/2 POST https://localhost:7107/api/auth/login application/json 50 - 500 - text/plain;+charset=utf-8 611.2476ms
+2025-03-06 00:12:39.7533 INFO Request starting HTTP/2 GET https://localhost:7107/HelloGreeting/Authenticate - -
+2025-03-06 00:12:39.7636 INFO Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-06 00:12:39.7782 INFO AuthenticationScheme: Bearer was challenged.
+2025-03-06 00:12:39.7782 INFO Request finished HTTP/2 GET https://localhost:7107/HelloGreeting/Authenticate - - - 401 0 - 26.0394ms
+2025-03-06 00:12:48.3848 INFO Request starting HTTP/2 GET https://localhost:7107/HelloGreeting/Authenticate - -
+2025-03-06 00:12:48.3891 INFO Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-06 00:12:48.3891 INFO AuthenticationScheme: Bearer was challenged.
+2025-03-06 00:12:48.3891 INFO Request finished HTTP/2 GET https://localhost:7107/HelloGreeting/Authenticate - - - 401 0 - 7.8044ms
+2025-03-06 00:15:55.0145 INFO Starting application...
+2025-03-06 00:15:56.8748 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 00:15:57.5966 INFO Now listening on: https://localhost:7107
+2025-03-06 00:15:57.5966 INFO Now listening on: http://localhost:5271
+2025-03-06 00:15:57.7506 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 00:15:57.7506 INFO Hosting environment: Development
+2025-03-06 00:15:57.7506 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 00:15:58.9753 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 00:16:00.8913 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 00:16:00.8913 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 00:16:00.8913 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1921.5996ms
+2025-03-06 00:16:00.9160 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 00:16:00.9160 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 23.2281ms
+2025-03-06 00:16:00.9354 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 44.1249ms
+2025-03-06 00:16:01.3272 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 411.1388ms
+2025-03-06 00:16:01.5354 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 00:16:01.5612 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.7615ms
+2025-03-06 00:16:09.7875 INFO Request starting HTTP/2 POST https://localhost:7107/api/auth/login application/json 50
+2025-03-06 00:16:10.1765 INFO Executing endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:16:10.2191 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.LoginRequest) on controller HelloGreetingApplication.Controllers.AuthController (HelloGreetingApplication).
+2025-03-06 00:16:10.2329 INFO Executed action HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication) in 4.7379ms
+2025-03-06 00:16:10.2329 INFO Executed endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:16:10.2329 ERROR An unhandled exception has occurred while executing the request.
+2025-03-06 00:16:10.3218 INFO Request finished HTTP/2 POST https://localhost:7107/api/auth/login application/json 50 - 500 - text/plain;+charset=utf-8 534.2852ms
+2025-03-06 00:22:00.3263 INFO Starting application...
+2025-03-06 00:22:02.9842 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 00:22:03.6111 INFO Now listening on: https://localhost:7107
+2025-03-06 00:22:03.6111 INFO Now listening on: http://localhost:5271
+2025-03-06 00:22:03.7023 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 00:22:03.7023 INFO Hosting environment: Development
+2025-03-06 00:22:03.7023 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 00:22:05.1736 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 00:22:06.6232 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 00:22:06.6702 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 00:22:06.6702 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1446.3500ms
+2025-03-06 00:22:06.6702 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 50.2718ms
+2025-03-06 00:22:06.6702 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 8.5475ms
+2025-03-06 00:22:06.7417 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 00:22:06.9832 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 241.5128ms
+2025-03-06 00:22:07.1459 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 00:22:07.1615 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.8460ms
+2025-03-06 00:22:32.5751 INFO Request starting HTTP/2 POST https://localhost:7107/api/auth/login application/json 50
+2025-03-06 00:22:33.1922 INFO Executing endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:22:33.2278 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.LoginRequest) on controller HelloGreetingApplication.Controllers.AuthController (HelloGreetingApplication).
+2025-03-06 00:22:33.2402 INFO Executed action HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication) in 4.3524ms
+2025-03-06 00:22:33.2402 INFO Executed endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 00:22:33.2492 ERROR An unhandled exception has occurred while executing the request.
+2025-03-06 00:22:33.3386 INFO Request finished HTTP/2 POST https://localhost:7107/api/auth/login application/json 50 - 500 - text/plain;+charset=utf-8 763.5160ms
+2025-03-06 00:23:07.8373 INFO Request starting HTTP/2 GET https://localhost:7107/HelloGreeting/AuthLogin - -
+2025-03-06 00:23:07.8528 INFO Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-06 00:23:07.8801 INFO AuthenticationScheme: Bearer was challenged.
+2025-03-06 00:23:07.8801 INFO Request finished HTTP/2 GET https://localhost:7107/HelloGreeting/AuthLogin - - - 401 0 - 43.4034ms
+2025-03-06 10:30:06.6215 INFO Starting application...
+2025-03-06 10:30:10.3845 INFO User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 10:30:11.6354 INFO Now listening on: https://localhost:7107
+2025-03-06 10:30:11.6354 INFO Now listening on: http://localhost:5271
+2025-03-06 10:30:11.8419 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 10:30:11.8419 INFO Hosting environment: Development
+2025-03-06 10:30:11.8419 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 10:30:16.2855 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 10:30:17.6984 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1413.1383ms
+2025-03-06 10:30:19.1784 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 10:30:19.1784 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 10:30:19.1784 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 10:30:19.1993 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 20.7998ms
+2025-03-06 10:30:19.1993 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 21.5244ms
+2025-03-06 10:30:19.6064 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 427.8980ms
+2025-03-06 10:30:19.9319 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 10:30:20.0700 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.1014ms
+2025-03-06 10:30:28.2293 INFO Request starting HTTP/2 POST https://localhost:7107/api/auth/login application/json 50
+2025-03-06 10:30:28.6649 INFO Executing endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 10:30:28.7242 INFO Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.Model.LoginRequest) on controller HelloGreetingApplication.Controllers.AuthController (HelloGreetingApplication).
+2025-03-06 10:30:28.7470 INFO Executed action HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication) in 6.363ms
+2025-03-06 10:30:28.7470 INFO Executed endpoint 'HelloGreetingApplication.Controllers.AuthController.Login (HelloGreetingApplication)'
+2025-03-06 10:30:28.7625 ERROR An unhandled exception has occurred while executing the request.
+2025-03-06 10:30:28.8886 INFO Request finished HTTP/2 POST https://localhost:7107/api/auth/login application/json 50 - 500 - text/plain;+charset=utf-8 659.3017ms
+2025-03-06 10:59:41.9511 INFO Starting application...
+2025-03-06 10:59:45.4888 INFO Now listening on: https://localhost:7107
+2025-03-06 10:59:45.5127 INFO Now listening on: http://localhost:5271
+2025-03-06 10:59:45.9209 INFO Application started. Press Ctrl+C to shut down.
+2025-03-06 10:59:45.9209 INFO Hosting environment: Development
+2025-03-06 10:59:45.9209 INFO Content root path: E:\Documents\Capgemini- Important\Training_Data\GreetingApp_2384200246\HelloGreetingApplication\HelloGreetingApplication\
+2025-03-06 10:59:48.3217 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.html - -
+2025-03-06 10:59:50.2880 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.html - - - 200 - text/html;charset=utf-8 1981.1378ms
+2025-03-06 10:59:50.3262 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/index.js - -
+2025-03-06 10:59:50.3262 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 10:59:50.3422 INFO Request starting HTTP/2 GET https://localhost:7107/_vs/browserLink - -
+2025-03-06 10:59:50.3741 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/index.js - - - 200 - application/javascript;charset=utf-8 47.8337ms
+2025-03-06 10:59:50.3741 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 48.8731ms
+2025-03-06 10:59:51.0598 INFO Request finished HTTP/2 GET https://localhost:7107/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 717.5551ms
+2025-03-06 10:59:51.3697 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 10:59:51.4226 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.9510ms
+2025-03-06 10:59:52.3133 INFO Request starting HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - -
+2025-03-06 10:59:52.3133 INFO Request finished HTTP/2 GET https://localhost:7107/_framework/aspnetcore-browser-refresh.js - - - 200 13784 application/javascript;+charset=utf-8 1.1469ms
+2025-03-06 10:59:52.8509 INFO Request starting HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - -
+2025-03-06 10:59:52.8728 INFO Request finished HTTP/2 GET https://localhost:7107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.9146ms

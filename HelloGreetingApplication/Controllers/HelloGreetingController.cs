@@ -1,4 +1,5 @@
 using BusinessLayer.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using NLog;
@@ -20,7 +21,7 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Get method to get the message
+    /// UC1- Get method to get the message
     /// </summary>
     /// <returns>"Hello, World</returns>
     [HttpGet]
@@ -37,7 +38,7 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Post method to receive request
+    /// UC1- Post method to receive request
     /// </summary>
     /// <param name="requestModel"></param>
     /// <returns>Response model</returns>
@@ -66,7 +67,7 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Put method to update the values
+    /// UC1- Put method to update the values
     /// </summary>
     /// <param name="requestModel"></param>
     /// <returns>Response Model</returns>
@@ -84,7 +85,7 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Patch method to partially update the values
+    /// UC1- Patch method to partially update the values
     /// </summary>
     /// <param name="requestModel"></param>
     /// <returns>Response Model</returns>
@@ -101,7 +102,7 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Delete method to delete the value
+    /// UC1- Delete method to delete the value
     /// </summary>
     /// <returns>Request Model</returns>
     [HttpDelete]
@@ -117,7 +118,16 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Getmessage method to get the message
+    /// UC2- Getmessage method to get the message
+    /// </summary>
+    /// <returns>Hello World</returns>
+    public string GetMessage()
+    {
+        return _greetingBL.GreetMessage();
+    }
+
+    /// <summary>
+    /// UC3- Getmessage method to get the message
     /// </summary>
     /// <returns>Hello World</returns>
     [HttpGet]
@@ -136,37 +146,9 @@ public class HelloGreetingController : ControllerBase
         };
         return Ok(responseModel);
     }
-    /// <summary>
-    /// Method to list all the greeting messages
-    /// </summary>
-    /// <returns>List of messages</returns>
-    [HttpGet]
-    [Route("ListGreeting")]
-    public IActionResult GetGreetings()
-    {
-        var greetings = _greetingBL.GetGreetings();
-        return Ok(greetings);
-    }
 
     /// <summary>
-    /// Method used to get greeting message by id
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns>Greeting Message</returns>
-    [HttpGet("{id}")]
-    [Route("GetGreetingById")]
-    public IActionResult GetGreetingById(int id)
-    {
-        var Id = _greetingBL.GetGreetingById(id);
-        if (Id == null)
-        {
-            return NotFound("Greeting not found.");
-        }
-        return Ok(Id);
-    }
-
-    /// <summary>
-    /// Add Greeting method Saves the greeting messages
+    /// UC4- Add Greeting method Saves the greeting messages
     /// </summary>
     /// <param name="greeting"></param>
     /// <returns>id and message</returns>
@@ -184,12 +166,41 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Method to update the greeting message
+    /// UC5- Method used to get greeting message by id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>Greeting Message</returns>
+    [HttpGet]
+    [Route("GetGreetingById")]
+    public IActionResult GetGreetingById(int id)
+    {
+        var Id = _greetingBL.GetGreetingById(id);
+        if (Id == null)
+        {
+            return NotFound("Greeting not found.");
+        }
+        return Ok(Id);
+    }
+
+    /// <summary>
+    /// UC6- Method to list all the greeting messages
+    /// </summary>
+    /// <returns>List of messages</returns>
+    [HttpGet]
+    [Route("ListGreeting")]
+    public IActionResult GetGreetings()
+    {
+        var greetings = _greetingBL.GetGreetings();
+        return Ok(greetings);
+    }
+
+    /// <summary>
+    /// UC7- Method to update the greeting message
     /// </summary>
     /// <param name="id"></param>
     /// <param name="greeting"></param>
     /// <returns>Updated greeting messages</returns>
-    [HttpPut("{id}")]
+    [HttpPut]
     [Route("UpdateGreeting")]
     public IActionResult UpdateGreeting(int id, GreetingEntity greeting)
     {
@@ -207,11 +218,11 @@ public class HelloGreetingController : ControllerBase
     }
 
     /// <summary>
-    /// Method to delete a message
+    ///UC8- Method to delete a message
     /// </summary>
     /// <param name="id"></param>
     /// <returns>deleted message</returns>
-    [HttpDelete("{id}")]
+    [HttpDelete]
     [Route("DeleteId")]
     public IActionResult DeleteGreeting(int id)
     {

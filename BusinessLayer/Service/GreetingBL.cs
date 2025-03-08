@@ -18,6 +18,11 @@ namespace BusinessLayer.Service
             _greetingRL = greetingRL; 
         }
 
+        public string GreetMessage()
+        {
+            return "Hello World";
+        }
+
         public string GreetMessage(string? firstName = null, string? lastName = null)
         {
             if(!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName))
